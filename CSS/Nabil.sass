@@ -1,0 +1,97 @@
+/*nabil css*/
+@import style 
+#member-content
+	display: flex
+	width: 75%
+	max-width: 800px
+	margin: 0 auto
+	margin-top: 40px
+
+.phrase
+	color: white
+	text-align: center
+	padding: 70px 20px
+
+.member-pic
+	width: 30%
+	text-align: center
+
+.member-disc
+	width: 70%
+	padding-left: 30px
+	padding-right: 30px
+
+div>p:last-child
+	font-size: 1em
+
+#member-content
+	img
+		width: 100%
+		border-radius: 50%
+		&:hover /* delete this if you want */
+			animation: shake 0.5s
+			animation-iteration-count: infinite
+@keyframes shake
+	0%
+		transform: translate(1px, 1px) rotate(0deg)
+
+	10%
+		transform: translate(-1px, -2px) rotate(-1deg)
+
+	20%
+		transform: translate(-3px, 0px) rotate(1deg)
+
+	30%
+		transform: translate(3px, 2px) rotate(0deg)
+
+	40%
+		transform: translate(1px, -1px) rotate(1deg)
+
+	50%
+		transform: translate(-1px, 2px) rotate(-1deg)
+
+	60%
+		transform: translate(-3px, 1px) rotate(0deg)
+
+	70%
+		transform: translate(3px, 1px) rotate(-1deg)
+
+	80%
+		transform: translate(-1px, -1px) rotate(1deg)
+
+	90%
+		transform: translate(1px, 2px) rotate(0deg)
+
+	100%
+		transform: translate(1px, -2px) rotate(-1deg)
+
+
+@media only screen and (max-width: 678px)
+	h3
+		margin-top: -20px
+		font-size: 20px
+
+	#member-content
+		display: block
+		width: 75%
+		max-width: 800px
+		margin: 0 auto
+		margin-top: 40px
+		h2
+			text-align: center
+
+	.member-pic
+		width: 100%
+		text-align: center
+		padding-left: 0
+		padding-right: 0
+
+
+	.member-disc
+		flex-direction: row
+		flex-wrap: wrap
+		width: 100%
+		padding-left: 0
+		padding-right: 0
+		text-align: justify
+
